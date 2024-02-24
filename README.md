@@ -1,2 +1,2 @@
-# wota.github.io
+# wota
 WOTA艺的技
