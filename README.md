@@ -1,2 +1,2 @@
 # wota
-WOTA艺的技
+WOTA艺
