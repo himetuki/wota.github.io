@@ -50,10 +50,9 @@ window.onclick = function (e) {
             return;
         }
         window.open(e.target.dataset.url)
-            } else if (e.target.dataset.Type == 'here') {
+    } else if (e.target.dataset.Type == 'here') {
 
     }
-
 }
 
 fetch('http://127.0.0.1:3900/guide')
