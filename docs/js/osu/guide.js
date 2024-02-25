@@ -31,18 +31,18 @@ window.onload = function () {
 }
 
 // 页面滚动
-// addEventListener('wheel', (event) => {
-//     let speed = 800;
+ addEventListener('wheel', (event) => {
+     let speed = 800;
 
-//     if (wheelLock == true) {
-//         return;
-//     }
-//     if (event.deltaY > 0) {
-//         pageDown(speed);
-//     } else if (event.deltaY < 0) {
-//         pageUp(speed)
-//     }
-// });
+     if (wheelLock == true) {
+         return;
+     }
+     if (event.deltaY > 0) {
+         pageDown(speed);
+     } else if (event.deltaY < 0) {
+         pageUp(speed)
+     }
+ });
 
 window.onclick = function (e) {
     if (e.target.dataset.Type == 'external') {
