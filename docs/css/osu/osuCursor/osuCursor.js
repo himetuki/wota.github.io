@@ -16,7 +16,7 @@ class osuCursor {
 
         this.osuCursorCenter = document.createElement('img');
         this.osuCursorCenter.id = "osuCursorCenter";
-        this.osuCursorCenter.src = "./osuCursor/img/cursormiddle@2x.png";
+        this.osuCursorCenter.src = "css/osu/suCursor/img/cursormiddle@2x.png";
 
         this.osuCursorBox = document.createElement('div');
         this.osuCursorBox.id = "osuCursorBox";
