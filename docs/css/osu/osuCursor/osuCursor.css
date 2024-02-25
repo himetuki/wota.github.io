@@ -1,0 +1,65 @@
+@keyframes CursorRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cursorToBig {
+    0%{
+        width: 90px;
+        height: 90px;
+    }
+    100%{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@keyframes cursorToSmall {
+    0%{
+        width: 110px;
+        height: 110px;
+    }
+    100%{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+#osuCursorCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#osuCursorBox{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    top: -90px;
+    left: -90px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+#osuCursorRound{
+    width: 90px;
+    animation: CursorRotate 3s linear infinite;
+    position: absolute;
+    pointer-events: none;
+}
+
+#osuCursorCenter{
+    width: 30px;
+    position: absolute;
+    pointer-events: none;
+}
