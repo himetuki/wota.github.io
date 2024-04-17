@@ -1,65 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- 黑幕效果 -->
-    <link rel="stylesheet" type="text/css" href="css/heimu.css">
-
-    <!-- animate动画效果,未使用 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/osu/guide.css">
-    <link rel="stylesheet" href="css/osu/guideAnimation.css">
-    <link rel="stylesheet" href="css/osu/guideMedia.css">
-    <script src="js/osu/tools.js"></script>
-    <title>强大的WOTA艺团队</title>
+    <title>WOTA艺团队</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            background: #ddd;
+            padding: 10px 15px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #ccc;
+        }
+        nav li {
+            display: inline;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="loading">loading...</div>
-    <div id="topPage" class="contentPage">
-        <div id="topContent">
-            <h1>团队</h1>
-            <p>高强的WOTA艺团队</p>
-            <ul>
-                <!-- 修改：添加了<a>标签并修正了href属性 -->
-                <a href="GinyuforcE.html" style="animation: 1s ease 0s 1 normal forwards running topContentLi;">
-                    <li>
-                        <span><ruby>GinyuforcE<rt>基纽特战队</rt></ruby></span>
-                    </li>
-                </a>
-                <!-- 其他列表项也需要类似的修改 -->
-                <a href="flyn.html" style="animation: 1s ease 0s 1 normal forwards running topContentLi;">
-                    <li>
-                        <span>Fly-N</span>
-                    </li>
-                </a>
-                <a href="zerouchi.html" style="animation: 1s ease 0.2s 1 normal forwards running topContentLi;">
-                    <li>
-                        <span><ruby>ゼロ打ち<rt>零打</rt></ruby></span>
-                    </li>
-                </a>
-                <li style="animation: 1s ease 0.2s 1 normal forwards running topContentLi;">
-                    <span>等待添加……</span>
-                </li>
-            </ul>
-            <ul id="guideUl"></ul>
+    <header>
+        <div class="container">
+            <h1>强大的WOTA艺团队</h1>
         </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="GinyuforcE.html" target="_blank">GinyuforcE 基纽特战队</a></li>
+                <li><a href="flyn.html" target="_blank">Fly-N</a></li>
+                <li><a href="zerouchi.html" target="_blank">ゼロ打ち 零打</a></li>
+                <li><a href="#" onclick="alert('链接待添加……'); return false;">等待添加……</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <p>这里是关于WOTA艺团队的介绍内容，可以添加更多的文本和图片来丰富页面。</p>
     </div>
-    <!-- 一些页面js -->
-    <script src="./js/osu/page.js"></script>
-    <script src="./js/osu/guide.js"></script>
-
-    <!-- 背景图 -->
-    <script src="images/background/bg.js"></script>
-    <link rel="stylesheet" href="images/background/bg.css">
-
-    <!-- OSU鼠标特效，生效 -->
-    <script src="css/osu/osuCursor/osuCursor.js"></script>
-    <link rel="stylesheet" href="css/osu/osuCursor/osuCursor.css">
 </body>
 
 </html>
