@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+center {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 a {
+    color: #39c5bb;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #39c5bb;
+    margin: 20px 0;
+}
+
+iframe {
+    width: 80%;
+    height: 450px;
+    margin: 20px 0;
+    border: none;
+}
