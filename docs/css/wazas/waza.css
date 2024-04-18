@@ -3,58 +3,46 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* 页面背景颜色 */
+    transition: background-color 0.3s; /* 添加背景颜色过渡效果 */
 }
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    padding: 20px;
 }
 header {
     background: #39c5bb; /* 标题背景颜色 */
     color: #fff; /* 标题文字颜色 */
-    padding: 20px;
-    text-align: center;
-}
-header h1 {
-    margin: 0;
-}
-.directory {
     padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #fff; /* 添加底部边框 */
 }
 .directory a {
     text-decoration: none;
     color: #39c5bb; /* 链接颜色 */
     margin-right: 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* 添加变换过渡效果 */
+    display: inline-block;
+    vertical-align: middle; /* 垂直居中 */
+    transform: translateY(0); /* 轻微上移链接，避免与标题重叠 */
 }
 .directory a:hover {
     color: #fff; /* 链接悬停颜色 */
+    transform: translateY(-2px); /* 链接悬停时上移 */
 }
 .section {
     margin: 20px 0;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.6); /* 技的背景颜色 */
+    padding: 20px;
+    background: #fff; /* 技的背景颜色 */
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加阴影效果 */
 }
 .video-title {
     font-size: 1.2em;
     margin-top: 10px;
     color: #000; /* 视频标题颜色 */
-}
-.video-list {
-    list-style: none;
-    padding-left: 0;
-}
-.video-list li {
-    margin-bottom: 5px;
-}
-.video-link {
-    text-decoration: none;
-    color: #39c5bb; /* 视频链接颜色 */
-}
-.video-link:hover {
-    text-decoration: underline;
-    color: #fff; /* 视频链接悬停颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手形 */
 }
 .dropdown {
     position: relative;
@@ -68,17 +56,19 @@ header h1 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid #39c5bb; /* 下拉菜单边框颜色 */
+    list-style-type: none; /* 移除列表项目符号 */
+    padding: 0; /* 移除内边距 */
 }
 .dropdown-content a {
     color: #000; /* 下拉菜单链接颜色 */
-    padding: 12px 16px;
+    padding: 8px 16px;
     text-decoration: none;
     display: block;
-    border-bottom: 1px solid #39c5bb; /* 下拉菜单分隔线颜色 */
+    border-bottom: 1px solid #f0f0f0; /* 下拉菜单分隔线颜色 */
 }
 .dropdown-content a:hover {
-    background-color: #39c5bb; /* 下拉菜单链接悬停背景颜色 */
-    color: #fff; /* 下拉菜单链接悬停文字颜色 */
+    background-color: #f0f0f0; /* 下拉菜单链接悬停背景颜色 */
+    color: #000; /* 下拉菜单链接悬停文字颜色 */
 }
 .dropdown:hover .dropdown-content {
     display: block;
