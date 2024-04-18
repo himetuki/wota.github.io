@@ -6,33 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GinyuforcE 统合</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="js/theme_color.js"></script>
     <link rel="stylesheet" type="text/css" href="css/teams/teams.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- 目录 -->
         <ol>
             <li><a href="#技连">技连</a></li>
             <li><a href="#企划">企划</a></li>
         </ol>
-        <center>
+        <header>
             <h1>GinyuforcE 统合
                 <a href="./teamPage.html">返回</a>
             </h1>
             <hr />
-            <h2 id="技连">技连</h2>
-            <hr />
-            <h3>
-                <a href="https://www.bilibili.com/video/BV1Xh411y7CZ/" target="_blank">WOTA艺的技 “超”大全集！！</a>
-                <br>
-                <iframe src="//player.bilibili.com/player.html?aid=203833691&bvid=BV1Xh411y7CZ&cid=286638985&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-            </h3>
-            <h2 id="企划">企划</h2>
-            <hr />
-        </center>
+        </header>
+        <details open>
+            <summary id="技连" style="background-color: #39c5bb; color: #fff; padding: 10px; margin-bottom: 20px; border-radius: 5px; cursor: pointer;">技连</summary>
+            <div style="padding: 10px; background-color: #fff; border-left: 3px solid #39c5bb; margin-bottom: 20px;">
+                <h3>
+                    <a href="https://www.bilibili.com/video/BV1Xh411y7CZ/" target="_blank" style="color: #39c5bb;">WOTA艺的技 “超”大全集！！</a>
+                    <br>
+                    <iframe src="//player.bilibili.com/player.html?aid=203833691&bvid=BV1Xh411y7CZ&cid=286638985&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; border: none;"></iframe>
+                </h3>
+            </div>
+        </details>
+        <details>
+            <summary id="企划" style="background-color: #39c5bb; color: #fff; padding: 10px; margin-bottom: 20px; border-radius: 5px; cursor: pointer;">企划</summary>
+            <div style="padding: 10px; background-color: #fff; border-left: 3px solid #39c5bb; margin-bottom: 20px;">
+                <p>企划部分的内容可以在这里添加。</p>
+            </div>
+        </details>
     </div>
 </body>
 
