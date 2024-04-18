@@ -24,15 +24,11 @@ header {
     text-decoration: none;
     color: #39c5bb;
     margin-right: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateY(0);
+    transition: color 0.3s ease;
 }
 
 .directory a:hover {
-    color: #fff;
-    transform: translateY(-2px);
+    color: #007a87;
 }
 
 .section {
@@ -43,9 +39,27 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.section h2 {
-    color: #333;
+.technique-info {
+    background: #e0f0f5; /* 雷蛇背景颜色 */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
     margin-bottom: 10px;
+}
+
+.technique-info h2 {
+    margin: 0;
+    color: #39c5bb;
+}
+
+.technique-info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.japanese-title {
+    font-size: 0.9em;
+    color: #666;
 }
 
 .video-title {
@@ -55,6 +69,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .dropdown-content {
@@ -62,9 +77,11 @@ header {
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1;
     border: 1px solid #39c5bb;
+    list-style-type: none;
+    padding: 0;
 }
 
 .dropdown-content a {
