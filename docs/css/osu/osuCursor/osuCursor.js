@@ -12,11 +12,11 @@ class osuCursor {
         // 生成HTML元素
         this.osuCursorRound = document.createElement('img');
         this.osuCursorRound.id = "osuCursorRound";
-        this.osuCursorRound.src = "css/osu/osuCursor/img/cursor@2x.png";
+        this.osuCursorRound.src = "./img/cursor@2x.png";
 
         this.osuCursorCenter = document.createElement('img');
         this.osuCursorCenter.id = "osuCursorCenter";
-        this.osuCursorCenter.src = "css/osu/osuCursor/img/cursormiddle@2x.png";
+        this.osuCursorCenter.src = "./img/cursormiddle@2x.png";
 
         this.osuCursorBox = document.createElement('div');
         this.osuCursorBox.id = "osuCursorBox";
