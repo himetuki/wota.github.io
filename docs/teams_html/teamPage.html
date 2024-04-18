@@ -19,7 +19,7 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #39c5bb; /* 主题色 */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -33,8 +33,8 @@
         }
         nav a {
             text-decoration: none;
-            color: #333;
-            background: #ddd;
+            color: #39c5bb; /* 主题色 */
+            background: rgba(255, 255, 255, 0.6);
             padding: 10px 15px;
             display: inline-block;
             margin-right: 10px;
@@ -42,10 +42,35 @@
             transition: background 0.3s ease;
         }
         nav a:hover {
-            background: #ccc;
+            background: rgba(255, 255, 255, 0.9);
         }
         nav li {
             display: inline;
+            margin-right: 20px; /* 增加间距 */
+        }
+        .details-content {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            border-left: 3px solid #39c5bb; /* 主题色 */
+        }
+        details {
+            margin-bottom: 20px;
+        }
+        summary {
+            padding: 5px 10px;
+            background-color: #39c5bb; /* 主题色 */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        summary:focus {
+            outline: none;
+        }
+        iframe {
+            width: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -64,15 +89,20 @@
                 <li><a href="zerouchi.html" target="_blank">ゼロ打ち 零打</a></li>
                 <li><a href="#" onclick="alert('链接待添加……'); return false;">等待添加……</a></li>
             </ul>
-            <center>
-            <h1>
-                <a href="../index.html">返回</a>
-            </h1>
         </div>
     </nav>
     <div class="container">
+        <!-- 示例：GinyuforcE 基纽特战队的视频下拉列表 -->
+        <details>
+            <summary>GinyuforcE 基纽特战队 视频列表</summary>
+            <div class="details-content">
+                <p><iframe src="//player.bilibili.com/player.html?aid=xxxxxx&bvid=BV1Xh411y7CZ&cid=xxxxxxx&p=1" allowfullscreen="true"></iframe></p>
+                <!-- 更多视频嵌入代码 -->
+            </div>
+        </details>
+        <!-- 其他团队的视频下拉列表 -->
+        <!-- ... -->
         <p>这里是关于WOTA艺团队的介绍内容，可以添加更多的文本和图片来丰富页面。</p>
     </div>
 </body>
-
 </html>
