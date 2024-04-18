@@ -6,36 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GinyuforcE 统合</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="js/theme_color.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/teams/teams.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* 页面背景色 */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #39c5bb; /* 主题色 */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #fff; /* 添加白色边框 */
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            background: #007a87; /* 返回按钮背景色 */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        header a:hover {
+            background: #005d6d; /* 返回按钮悬停效果 */
+        }
+        nav {
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ol {
+            list-style: none;
+            padding: 0;
+        }
+        nav ol li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ol li a {
+            text-decoration: none;
+            color: #39c5bb; /* 目录链接颜色 */
+            border-bottom: 2px solid transparent; /* 添加边框以便悬停时显示 */
+            transition: border-color 0.3s ease;
+        }
+        nav ol li a:hover, nav ol li a:focus {
+            border-color: #39c5bb; /* 目录链接悬停效果 */
+        }
+        .details-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加阴影效果 */
+        }
+        details {
+            margin-bottom: 20px;
+        }
+        summary {
+            padding: 10px;
+            background-color: #39c5bb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+        summary:hover, summary:focus {
+            background-color: #007a87;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            margin-bottom: 20px; /* 添加边距 */
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <ol>
-            <li><a href="#技连">技连</a></li>
-            <li><a href="#企划">企划</a></li>
-        </ol>
         <header>
-            <h1>GinyuforcE 统合
-                <a href="./teamPage.html">返回</a>
-            </h1>
-            <hr />
+            <h1>GinyuforcE 统合</h1>
+            <a href="./teamPage.html" style="margin-left: 20px;">返回</a>
         </header>
+        <nav>
+            <ol>
+                <li><a href="#技连">技连</a></li>
+                <li><a href="#企划">企划</a></li>
+            </ol>
+        </nav>
         <details open>
-            <summary id="技连" style="background-color: #39c5bb; color: #fff; padding: 10px; margin-bottom: 20px; border-radius: 5px; cursor: pointer;">技连</summary>
-            <div style="padding: 10px; background-color: #fff; border-left: 3px solid #39c5bb; margin-bottom: 20px;">
+            <summary id="技连">技连</summary>
+            <div class="details-content">
                 <h3>
-                    <a href="https://www.bilibili.com/video/BV1Xh411y7CZ/" target="_blank" style="color: #39c5bb;">WOTA艺的技 “超”大全集！！</a>
+                    <a href="https://www.bilibili.com/video/BV1Xh411y7CZ/" target="_blank">WOTA艺的技 “超”大全集！！</a>
                     <br>
-                    <iframe src="//player.bilibili.com/player.html?aid=203833691&bvid=BV1Xh411y7CZ&cid=286638985&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; border: none;"></iframe>
+                    <iframe src="//player.bilibili.com/player.html?aid=203833691&bvid=BV1Xh411y7CZ&cid=286638985&p=1" allowfullscreen="true"></iframe>
                 </h3>
             </div>
         </details>
         <details>
-            <summary id="企划" style="background-color: #39c5bb; color: #fff; padding: 10px; margin-bottom: 20px; border-radius: 5px; cursor: pointer;">企划</summary>
-            <div style="padding: 10px; background-color: #fff; border-left: 3px solid #39c5bb; margin-bottom: 20px;">
+            <summary id="企划">企划</summary>
+            <div class="details-content">
                 <p>企划部分的内容可以在这里添加。</p>
             </div>
         </details>
